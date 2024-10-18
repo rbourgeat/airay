@@ -8,40 +8,53 @@ A simple Flask-based web app that can detect if an image is AI-generated or if a
 
 ### Option 1: Run with Docker
 
-1.	Clone the repository:
+1. Requirements:
+
+Download and install Docker from the [Docker website](https://www.docker.com/products/docker-desktop).
+
+2.	Clone the repository:
 
 ```bash
 git clone https://github.com/rbourgeat/airay.git
 cd airay
 ```
 
-2.	Build and run the containers:
+3.	Build and run the containers:
 
 ```bash
 docker compose up --build
 ```
 
-3.	The app will be available at [localhost:5042](http://localhost:5042).
+4.	The app will be available at [localhost:5042](http://localhost:5042).
 
 ### Option 2: Run Natively
 
-1.	Install backend dependencies and start the server:
+1. Requirements:
+
+Download and install Python from the [Python website](https://www.python.org/downloads/).
+
+Download and install Node.js from the [Node.js website](https://nodejs.org/).
+
+2.	Install backend dependencies and start the server:
 
 ```bash
 git clone https://github.com/rbourgeat/airay.git
-cd airay/backend
+cd airay
+cd backend
 python3 -m pip install -r requirements.txt
 python3 main.py
 ```
 
-2.	Install frontend dependencies and start the server:
+3.	Install frontend dependencies and start the server:
 
 ```bash
-npm i
+cd ..
+cd frontend
+npm install
 npm run dev
 ```
 
-3.	The app will be available at [localhost:5042](http://localhost:5042).
+4.	The app will be available at [localhost:5042](http://localhost:5042).
 
 ## Contributing
 
