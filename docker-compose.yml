@@ -1,0 +1,21 @@
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - '5042:5042'
+    networks:
+      - airay-network
+
+  frontend:
+    build: ./frontend
+    ports:
+      - '3042:3042'
+    depends_on:
+      - backend
+    networks:
+      - airay-network
+
+networks:
+  airay-network:
+    driver: bridge

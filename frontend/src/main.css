@@ -1,0 +1,31 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+.borderMenu {
+    position: fixed;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border: 3px solid white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.red:hover .ant-upload {
+    border-color: red !important;
+}
+
+.red:focus {
+    border-color: red !important;
+    outline: none;
+}
